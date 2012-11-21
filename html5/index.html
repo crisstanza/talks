@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>Presentation</title>
+
+    <meta charset='utf-8'>
+    <script
+      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+  </head>
+  
+  <style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+    
+    
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-faux-widescreen template-default'>
+      
+      <!-- Your slides (<article>s) go here. Delete or comment out the
+           slides below. -->
+        
+        
+      
+      <article class='biglogo'>
+      </article>
+
+      <article class="nobackground">
+        <h1>
+          HTML5
+          <br>
+          Teoria e pratica
+        </h1>
+        <p>
+          Antonio Mello, Cristiano Neves
+          <br>
+          29 de novembro, 2012
+        </p>
+      </article>
+      
+      <article>
+        <p>
+          <strong>Objetivo:</strong> Introduzir novos conceitos conceitos de HTML, 
+          em comparativo com versoes anteriores e demonstracao pratica.
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          Antonio Mello: Desenvolvedor Java
+        </h3>
+        <p>Twitter: @homeless_coder
+          <br>
+           Github: acmello
+        </p>
+        <br>
+        <h3>
+          Cristiano Neves: Desenvolvedor Java
+        </h3>
+        <p>
+          Twitter: @crisstanza
+          <br>
+          Github: crisstanza
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          HTML5: O que e?
+        </h3>
+        
+        <ul class="build">
+          <li>
+            HTML5 tudo que ha de novo
+          </li>
+          <li>
+            Resolve antigos problemas de versoes anteriores
+          </li>
+          <li>
+            Poe em pratica o conceito de plugin-free
+          </li>  
+          <li>
+            Nao esta concluido
+          </li>
+        </ul>        
+      </article>
+
+      <article>
+        <h3>
+          O que mudou
+        </h3>
+        <ul class="build">
+          <li>
+            Novas tags (article, section, picture, etc)
+          </li>
+          <li>
+            Audio e video (captura e processamento)
+          </li>
+          <li>
+            Formularios
+          </li>
+          <li>
+            Armazenamento local  
+          </li>
+          <li>
+            Localizacao geografica
+          </li>
+          <li>
+            Websockets
+          </li>
+          <li>
+            Design responsivo
+          </li>
+          <li>
+            Processamento de primitivas graficas (Canvas)
+          </li>  
+        </ul>
+      </article>
+
+      <article>
+        <h3>
+           Canvas
+        </h3>
+        <ul>
+          <li>
+            Do ingles tela (ou seja, uma area para desenho livre ponto a ponto)
+          </li>
+          <li>
+            Inicialmente desenvolvido pela Apple
+          </li>  
+          <li>
+            Permite criar retangulos, circunferencias e formas geometricas mais complexas
+          </li>
+          <li>
+            Integracao total com HTML e CSS
+          </li>
+          <li>
+            Necessita browser moderno
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>
+          Criando Canvas
+        </h3>
+        
+         <section>
+          <pre> &lt;canvas id="canvas" width="200" height="100"&gt;&lt;/canvas&gt;</pre>
+
+          <pre>
+// obtendo o elemento canvas
+var canvas = canvas.querySelector("canvas"); 
+
+// obtendo o contexto, nesse caso 2d
+var ctx = canvas.getContext("2d");
+
+// setando a cor do elemento para vermelho
+ctx.fillStyle = "red";
+
+// desenhando um retangulo com 30 de largura e 20 de altura
+ctx.fillRect(0, 0, 30, 20);</pre>
+        </section>
+
+      </article>
+
+      <article>
+        <h3>
+          Exemplo: aplicativo (game) para Facebook:
+        </h3>
+
+        <ul class="build">
+          <li>
+            Social-Snakes, o popular jogo snakes no Facebook
+          </li>  
+          <li>
+            Desenvolvido por Antonio Mello e Cristiano Neves
+          </li>
+          <li>
+            Utiliza basicamente HTML, Javascript e Canvas
+          </li>
+          <li>
+            Tambem utiliza API do Facebook
+          </li>
+          <li>
+            Projeto open-source, disponivel no Github
+          </li>
+          <ul>  
+      </article>
+
+      <article>
+        <h3>Coding Time</h3>
+      </article>
+      
+      <article>
+        <h3>Conclusao</h3>
+
+        <ul>
+          <li>
+            Prove solucoes para problemas que inicialmente nao se imaginava que iriam existir
+          </li>
+          <li>
+            Muitas implementacoes ainda sao experimentais
+          </li>  
+          <li>
+            HTML5 mudou a maneira como as pessoas interagem com a web
+          </li>
+           <li>
+            Novas ideias sao sempre bem vindas, afinal, quem faz a web e voce :)
+          </li>
+        </ul>
+      </article>
+  
+      <article>
+        <h3>
+          Obrigado!
+        </h3>
+      </article>
+  </body>
+</html>
