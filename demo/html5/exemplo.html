@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>HTML5 - exemplo canvas</title>
+		<style>
+			canvas {
+				background-color: silver;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas width="400" height="400"></canvas>
+		<script>
+			var canvas = document.querySelector('canvas');
+			var contexto = canvas.getContext('2d');
+
+			var raio = 60;
+			var corLinha = 'red';
+			var corPreenchimento = 'blue';
+
+			var x = raio;
+			var y = raio;
+
+			var gameLoop = setInterval(function() {
+
+				x++;
+				y++;
+
+				contexto.clearRect(0, 0, canvas.width, canvas.height);
+				contexto.beginPath();
+				contexto.arc(x, y, raio, 0, 2 * Math.PI, false);
+				contexto.fillStyle = corPreenchimento;
+				contexto.strokeStyle = corLinha;
+				contexto.stroke();
+				contexto.fill();				
+			}, 1000 / 60);
+		</script>
+	</body>
+</html>
